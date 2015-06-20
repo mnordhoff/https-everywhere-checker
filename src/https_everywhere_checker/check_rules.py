@@ -152,7 +152,7 @@ def disableRuleset(ruleset, problems):
 	# If there's not already a comment section at the beginning, add one.
 	if not re.search("^<!--", contents):
 		contents = "<!--\n-->\n" + contents
-	problemStatement = ("""
+	problemStatement = ("""\
 <!--
 Disabled by https-everywhere-checker because:
 %s
